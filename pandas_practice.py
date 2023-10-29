@@ -32,7 +32,24 @@ print(df[df['age'] > 25])
 
 print(df.sort_values("age", ascending=False))
 
+df.loc[df['city'] == 'Kyle', 'city'] = 'Austin'
+print(df)
+
+# Amending the dataframe with rows missing age or city values.
+
+df10272023 = [{"name": "Claire", "age": np.nan, "city": "Austin"},
+              {"name": "John", "age": 21, "city": np.nan},
+              {"name": "Steve", "age": 34, "city": np.nan},
+              {"name": "Morgan", "age": np.nan, "city": np.nan},
+              {"name": "Tyler", "age": np.nan,"city": "Tyler"},
+              {"name": "Ashley", "age": 28, "city": "Austin"}]
+
+df = df._append(df10272023, ignore_index=True)
+
+# We are dropping the rows where the city field is null
+df = df.dropna(subset=['city'])
+# Had the senior check at line 36, realized it needs to be run after all amends have been made.
+
 df["senior"] = np.where(df['age'] > 60, True, False)
 
-df.loc[df['city'] == 'Kyle', 'city'] = 'Austin'
 print(df)
