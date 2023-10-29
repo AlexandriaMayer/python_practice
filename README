@@ -1,0 +1,67 @@
+# I wanted to add structure to my self-taught experience, and I wanted to practice learning w/o resulting to a tutorial. I asked ChatGPT4 to create a list of exercises for Python's Panda's extension.
+# My answers are my own, are informed by other online guides, stack overflow posts, etc, but I wrote the code myself. 
+# Here is what ChatGPT4 suggested:
+# 1. Basic DataFrame Operations
+
+# a. Create a DataFrame with 3 columns: Name, Age, and City. Add 5 rows with fictional or real data.
+
+# b. Display the first 3 rows of the DataFrame.
+
+# c. Display the last 2 rows of the DataFrame.
+
+# d. Filter and display only those rows where Age is greater than 25.
+
+# 2. Data Manipulation
+
+# a. Sort the DataFrame based on the Age column in descending order.
+
+
+# b. Create a new column called Senior which marks True if the age is above 60, and False otherwise.
+
+# c. Replace a city name of your choice with another city name for all occurrences.
+
+# 3. Missing Data Handling
+
+# a. Intentionally introduce some missing values in the City and Age columns.
+
+# b. Use the fillna() method to replace missing values in Age with the average age.
+
+# c. Drop rows where City is missing.
+
+# 4. Grouping and Aggregation
+
+# a. Group the data by City and calculate the average age for each city.
+
+# b. Group by City and get the count of names in each city. <- as of 10/29/23, I am here.
+
+# 5. Date Handling
+
+# a. Create a new DataFrame with the columns: Name, DateOfBirth, and Salary. Fill it with fictional data.
+
+# b. Convert the DateOfBirth column to datetime format (if it isn't already).
+
+# c. Create a new column Age that calculates the age of each individual based on the DateOfBirth column.
+
+# 6. Merging DataFrames
+
+# a. Create two DataFrames: df1 with columns ID, Name, and Role and df2 with columns ID, Salary, and Experience.
+
+# b. Merge the two DataFrames on the ID column.
+
+# 7. Reading and Writing
+
+# a. Write the merged DataFrame from the previous exercise to a new CSV file.
+
+# b. Read the CSV file back into a new DataFrame and display the first 5 rows.
+
+# 8. Pivot Tables
+
+# a. Using the DataFrame with Name, City, and Age, create a pivot table that shows the average age for each city.
+
+# 9. Apply Function
+
+# a. Use the apply() function to create a new column in a DataFrame that contains the length of each name in the Name column.
+
+# 10. Advanced Filtering
+
+# a. Filter the DataFrame to display rows where the name starts with the letter 'A' and age is above 30.
