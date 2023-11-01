@@ -55,7 +55,10 @@ df["senior"] = np.where(df['age'] > 60, True, False)
 print(df)
 
 # group data by city, get average age in each city
+# group data by city, get average age in each city
 
-gr = df.groupby('city')
+gr = df.groupby('city').mean('age')
+names = df.groupby(['city'])['name'].count()
 
 print(gr)
+print(names)
