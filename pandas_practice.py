@@ -1,6 +1,8 @@
 # I asked ChatGPT to give me exercises to practice and learn Pandas. 
 # I'll update this as I complete the lessons it assigned me.
 
+import datetime as DT
+import io
 import pandas as pd
 import numpy as np
 
@@ -62,3 +64,22 @@ names = df.groupby(['city'])['name'].count()
 
 print(gr)
 print(names)
+
+# 5. group handling
+# a. a. Create a new DataFrame with the columns: Name, DateOfBirth, and Salary. 
+# Fill it with fictional data.
+
+employees = [["Morgan", "Dally", "19950601",45000],["John", "Hamiliton","19910412",32000],
+             ["Hazel","Pemberton","20000703",40000],["Annamarie","Wilson","19930310",97000], 
+             ["Tsukasa", "Hiiragi","19890707",87000], ["Kagami", "Hiiragi", "19890707",145000]]
+
+df_employees = pd.DataFrame(employees, columns = ["f_name", "l_name","date_of_birth", "salary"])
+
+# b. Convert the DateOfBirth column to datetime format (if it isn't already).
+
+df_employees["date_of_birth"]= pd.to_datetime(df_employees['date_of_birth'], infer_datetime_format=True)
+
+# c. Create a new column Age that calculates the age of each individual based on 
+# the DateOfBirth column.
+
+#turns out I can order y/m/d in any order. still need to figure out the conversion from dob to age.
