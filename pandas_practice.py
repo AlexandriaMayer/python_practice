@@ -83,3 +83,6 @@ df_employees["date_of_birth"]= pd.to_datetime(df_employees['date_of_birth'], inf
 # the DateOfBirth column.
 
 #turns out I can order y/m/d in any order. still need to figure out the conversion from dob to age.
+
+# I feel like this should just be a figure out = DOB is one timestamp, then use another timestap. now - then = age.
+# Tonight, how about I set up my PostgreSQL server instead?
