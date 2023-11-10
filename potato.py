@@ -10,3 +10,10 @@ for potato in potatoes:
 # What I want to is: select 'potato' from the list, but only select characters.
 
 bit = "L O N G B I T"
+
+var nyum = 45
+var mybignum 45L
+# L makes the number a long int. 
+
+print(mynum)
+print(mybignum)
