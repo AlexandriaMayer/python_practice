@@ -86,3 +86,16 @@ df_employees["date_of_birth"]= pd.to_datetime(df_employees['date_of_birth'], inf
 
 # I feel like this should just be a figure out = DOB is one timestamp, then use another timestap. now - then = age.
 # Tonight, how about I set up my PostgreSQL server instead?
+
+# 6. Merging DataFrames
+
+# a. Create two DataFrames: df1 with columns ID, Name, and Role and df2 with columns ID, Salary, and Experience.
+
+df1 = pd.DataFrame(columns=['ID', 'Name', 'Role'])
+
+df2 = pd.DataFrame(columns=['ID', 'Salary', 'Experience'])
+
+
+# b. Merge the two DataFrames on the ID column.
+
+dfm = df1.merge(df2, how = 'left')
