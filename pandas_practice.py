@@ -90,12 +90,31 @@ df_employees["date_of_birth"]= pd.to_datetime(df_employees['date_of_birth'], inf
 # 6. Merging DataFrames
 
 # a. Create two DataFrames: df1 with columns ID, Name, and Role and df2 with columns ID, Salary, and Experience.
+employees_1 = [[44, "Moe", "Assistant Manager"],[45, "Janet", "Data Mapper II"],
+              [46, "Henzel", "System Adminstrator"], [47, "Fredrick", "Audio Engineer"],
+              [48, "Yuri", "Audio Technican"], [49, "Elizabeth", "Systems Analyst"],
+              [50, "Tori", "Referee"], [51, "Zena", "Audio Engineer"]]
 
-df1 = pd.DataFrame(columns=['ID', 'Name', 'Role'])
+df1 = pd.DataFrame(employees_1, columns=['ID', 'Name', 'Role'])
 
-df2 = pd.DataFrame(columns=['ID', 'Salary', 'Experience'])
+
+print(df1.head())
+
+employees_2 = [[41, 56900, 5.2], [42, 25000, 3.7], [43, 64000, 4.1], [44, 56000, 8.5],[45, 78000, 7],
+              [46, 78000, 9], [47, 18000000, 40.5], [48, 64000, 87.6], [49, 65000, 6], [50, 108000, 6],
+              [51, 125000, 7]]
+
+df2 = pd.DataFrame(employees_2, columns=['ID', 'Salary', 'Experience'])
+
+print(df2.head())
+
+
 
 
 # b. Merge the two DataFrames on the ID column.
 
 dfm = df1.merge(df2, how = 'left')
+
+print(dfm.head())
+
+# So, merge acts just like a SQL join.
