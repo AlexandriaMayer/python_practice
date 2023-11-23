@@ -118,3 +118,13 @@ dfm = df1.merge(df2, how = 'left')
 print(dfm.head())
 
 # So, merge acts just like a SQL join.
+
+# 7. Reading and Writing
+
+# a. Write the merged DataFrame from the previous exercise to a new CSV file.
+
+# b. Read the CSV file back into a new DataFrame and display the first 5 rows.
+
+dfm.to_csv('employees_2.csv')
+
+# happy thanksgiving everyone!
