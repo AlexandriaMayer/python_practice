@@ -127,4 +127,10 @@ print(dfm.head())
 
 dfm.to_csv('employees_2.csv')
 
+employees_2 = pd.read_csv("C:/Users/andre/OneDrive/Documents/DA_training/employees_2.csv")
+
+print(employees_2.head())
+
+# running this script in VSCode produced a "  File "<stdin>", line 1" syntax error for pandas_practice.py
+# when I ran the script in a dedicated terminal, it came out correctly
 # happy thanksgiving everyone!
