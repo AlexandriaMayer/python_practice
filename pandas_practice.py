@@ -134,3 +134,8 @@ print(employees_2.head())
 # running this script in VSCode produced a "  File "<stdin>", line 1" syntax error for pandas_practice.py
 # when I ran the script in a dedicated terminal, it came out correctly
 # happy thanksgiving everyone!
+
+# 8. Pivot Tables
+
+# a. Using the DataFrame with Name, City, and Age, create a pivot table that shows the average age 
+# for each city.
