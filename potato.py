@@ -1,6 +1,10 @@
 import pandas as pd
 
-potatoes = ['russet', 'golden', 'red', 'potato']
+print('Please name a type of potato')
+
+x = input()
+
+potatoes = x
 
 for potato in potatoes:
     print(potato)
